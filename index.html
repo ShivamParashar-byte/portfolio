@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Shivam Parashar | Full-Stack Software Developer</title>
+<meta name="description" content="Shivam Parashar is a full-stack developer with 4+ years of experience in Java, Spring Boot, React, Node.js, SQL and RAG-based AI applications. Based in Delhi/NCR, open to SDE and full-stack roles.">
+<meta property="og:title" content="Shivam Parashar | Full-Stack Software Developer">
+<meta property="og:description" content="Java, Spring Boot, React, Node.js, SQL and RAG-based AI applications.">
+<meta name="theme-color" content="#0E1726">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231F4FFF'/%3E%3Ctext x='32' y='43' font-size='32' text-anchor='middle' fill='white' font-family='Arial' font-weight='700'%3ESP%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#0E1726;--paper:#F6F8FB;--white:#fff;--blue:#1F4FFF;--blue-d:#1238c4;--slate:#556078;--line:#DCE2EC;--sky:#E8EEFF;--r:10px}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:72px}
+body{font-family:"Plus Jakarta Sans",system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;background:var(--paper);color:var(--ink);line-height:1.6;font-size:16px;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--blue);outline-offset:3px;border-radius:4px}
+.wrap{max-width:1120px;margin:0 auto;padding:0 24px}
+.skip{position:absolute;left:-999px}.skip:focus{left:12px;top:12px;background:#fff;padding:8px 14px;z-index:99}
+
+/* nav */
+header{position:sticky;top:0;z-index:50;background:rgba(246,248,251,.9);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+nav{display:flex;align-items:center;justify-content:space-between;height:64px}
+.brand{display:flex;align-items:center;gap:10px;font-weight:800;text-decoration:none;letter-spacing:-.01em}
+.logo{width:30px;height:30px;border-radius:8px;background:var(--blue);color:#fff;display:grid;place-items:center;font-size:13px;font-weight:800}
+.links{display:flex;align-items:center;gap:26px;list-style:none;font-size:14.5px;font-weight:500}
+.links a{text-decoration:none;color:var(--slate)}.links a:hover{color:var(--ink)}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:11px 20px;border-radius:8px;font-weight:600;font-size:15px;text-decoration:none;border:1px solid transparent;transition:background .15s,border-color .15s}
+.btn.p{background:var(--blue);color:#fff}.btn.p:hover{background:var(--blue-d)}
+.btn.s{background:#fff;border-color:var(--line)}.btn.s:hover{border-color:var(--ink)}
+.links .btn{padding:8px 16px;font-size:14px;color:#fff}.links .btn:hover{color:#fff}
+
+/* hero */
+.hero{padding:84px 0 72px;background:linear-gradient(180deg,var(--sky) 0,var(--paper) 100%)}
+.hero .wrap{display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:center}
+.status{display:inline-flex;align-items:center;gap:9px;background:#fff;border:1px solid var(--line);padding:6px 14px;border-radius:99px;font-size:13.5px;font-weight:500;color:var(--slate)}
+.dot{width:8px;height:8px;border-radius:50%;background:#16A34A;box-shadow:0 0 0 4px rgba(22,163,74,.18)}
+h1{font-size:clamp(38px,5.2vw,62px);line-height:1.04;letter-spacing:-.035em;font-weight:800;margin:22px 0 20px}
+.lead{font-size:18.5px;color:var(--slate);max-width:520px}
+.cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:32px}
+.console{background:var(--ink);border-radius:14px;box-shadow:0 30px 60px -20px rgba(14,23,38,.45);overflow:hidden;color:#C9D4EA}
+.cbar{display:flex;align-items:center;gap:7px;padding:13px 16px;border-bottom:1px solid rgba(255,255,255,.08);font:500 12.5px "JetBrains Mono",monospace;color:#7F8CA6}
+.cbar i{width:10px;height:10px;border-radius:50%;background:#2A3550}.cbar span{margin-left:8px}
+pre{font:400 13.5px/1.75 "JetBrains Mono",ui-monospace,Menlo,Consolas,monospace;padding:20px 22px;min-height:236px;white-space:pre-wrap}
+.k{color:#8FA9FF}.f{color:#6EE7B7}.c{color:#6B7893}
+.cur{display:inline-block;width:8px;height:15px;background:#8FA9FF;vertical-align:-2px;animation:b 1s steps(1) infinite}
+@keyframes b{50%{opacity:0}}
+.result{display:flex;justify-content:space-between;padding:12px 22px;border-top:1px solid rgba(255,255,255,.08);font:400 12.5px "JetBrains Mono",monospace;color:#7F8CA6}
+.result b{color:#6EE7B7;font-weight:500}
+
+/* stats */
+.stats{margin-top:-1px;background:var(--white);border-block:1px solid var(--line)}
+.stats .wrap{display:grid;grid-template-columns:repeat(4,1fr)}
+.stat{padding:30px 24px;border-left:1px solid var(--line)}.stat:first-child{border-left:0;padding-left:0}
+.stat b{display:block;font-size:34px;letter-spacing:-.03em;font-weight:800;line-height:1.1}
+.stat span{font-size:14px;color:var(--slate)}
+
+/* sections */
+section{padding:88px 0}
+.head{max-width:620px;margin-bottom:44px}
+h2{font-size:clamp(28px,3.4vw,40px);letter-spacing:-.03em;line-height:1.12;font-weight:800;margin-bottom:12px}
+.head p{color:var(--slate);font-size:17px}
+.alt{background:var(--white);border-block:1px solid var(--line)}
+
+/* about */
+.about{display:grid;grid-template-columns:1.2fr .8fr;gap:56px}
+.about p{color:var(--slate);margin-bottom:16px;font-size:17px}
+.facts{background:var(--paper);border:1px solid var(--line);border-radius:var(--r);padding:8px 24px;align-self:start}
+.facts div{display:flex;justify-content:space-between;gap:16px;padding:14px 0;border-bottom:1px solid var(--line);font-size:15px}
+.facts div:last-child{border:0}.facts dt{color:var(--slate)}.facts dd{font-weight:600;text-align:right}
+
+/* timeline */
+.tl{list-style:none;position:relative;padding-left:34px}
+.tl:before{content:"";position:absolute;left:7px;top:8px;bottom:8px;width:2px;background:var(--line)}
+.tl li{position:relative;padding-bottom:40px}.tl li:last-child{padding-bottom:0}
+.tl li:before{content:"";position:absolute;left:-34px;top:7px;width:16px;height:16px;border-radius:50%;background:#fff;border:3px solid var(--line)}
+.tl li.now:before{border-color:var(--blue);background:var(--blue);box-shadow:0 0 0 5px var(--sky)}
+.role{display:flex;flex-wrap:wrap;justify-content:space-between;gap:4px 20px;align-items:baseline}
+.role h3{font-size:20px;letter-spacing:-.015em;font-weight:700}
+.role time{font-size:14px;color:var(--slate);font-weight:500}
+.org{color:var(--blue);font-weight:600;margin:2px 0 10px}
+.tl ul{list-style:none;max-width:780px}
+.tl ul li{padding:0 0 7px 18px;color:var(--slate);font-size:15.5px}
+.tl ul li:before{content:"";left:0;top:11px;width:6px;height:2px;border:0;border-radius:0;background:var(--slate);box-shadow:none}
+
+/* projects */
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.card{background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:26px;display:flex;flex-direction:column;transition:border-color .15s,transform .15s}
+.card:hover{border-color:var(--blue);transform:translateY(-3px)}
+.card.big{grid-column:span 2;background:var(--ink);border-color:var(--ink);color:#fff}
+.card.big p{color:#B4C0D8}.card.big .tag{background:rgba(255,255,255,.1);color:#DCE6FF}
+.card h3{font-size:18.5px;letter-spacing:-.01em;font-weight:700;margin-bottom:4px}
+.yr{font-size:13px;color:var(--slate);margin-bottom:12px;font-weight:500}.big .yr{color:#8D9BB8}
+.card p{color:var(--slate);font-size:15px;flex:1}
+.tags{display:flex;flex-wrap:wrap;gap:7px;margin-top:18px}
+.tag{font-size:12.5px;font-weight:600;background:var(--sky);color:var(--blue-d);padding:4px 10px;border-radius:6px}
+
+/* skills */
+.skills{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.sk{border:1px solid var(--line);border-radius:var(--r);padding:24px;background:var(--paper)}
+.sk h3{font-size:16px;font-weight:700;margin-bottom:14px}
+.sk .tags{margin:0}.sk .tag{background:#fff;border:1px solid var(--line);color:var(--ink);font-weight:500;font-size:13.5px}
+
+/* credentials */
+.creds{display:grid;grid-template-columns:repeat(2,1fr);gap:14px 20px;list-style:none}
+.creds li{display:flex;justify-content:space-between;gap:16px;align-items:center;background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:16px 20px;font-weight:600;font-size:15px}
+.creds small{color:var(--slate);font-weight:500;font-size:13px;white-space:nowrap;text-align:right}
+.edu{margin-top:20px;background:var(--sky);border-radius:var(--r);padding:22px 24px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px 20px}
+.edu b{font-size:17px}.edu span{color:var(--slate);font-size:15px}
+
+/* contact */
+.contact{background:var(--ink);color:#fff;border-radius:18px;padding:56px;display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center}
+.contact h2{color:#fff}.contact p{color:#B4C0D8;font-size:17px}
+.cl{display:flex;flex-direction:column;gap:12px}
+.cl a{display:flex;justify-content:space-between;gap:12px;padding:15px 18px;border:1px solid rgba(255,255,255,.16);border-radius:8px;text-decoration:none;font-weight:600;font-size:15px;transition:background .15s}
+.cl a:hover{background:rgba(255,255,255,.08)}.cl span{color:#8D9BB8;font-weight:500}
+footer{padding:36px 0 44px;color:var(--slate);font-size:14px}
+footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
+
+@media(max-width:900px){
+ .hero .wrap,.about,.contact{grid-template-columns:1fr}
+ .grid,.skills{grid-template-columns:1fr 1fr}.card.big{grid-column:span 2}
+ .stats .wrap{grid-template-columns:1fr 1fr}.stat:nth-child(3){border-left:0;padding-left:0}.stat{border-top:1px solid var(--line)}.stat:nth-child(-n+2){border-top:0}
+ .links li:not(:last-child){display:none}
+ .contact{padding:36px 28px}
+}
+@media(max-width:620px){
+ section{padding:64px 0}.hero{padding:56px 0}
+ .grid,.skills,.creds{grid-template-columns:1fr}.card.big{grid-column:auto}
+ .creds li{flex-direction:column;align-items:flex-start;gap:2px}.creds small{text-align:left}
+}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.cur{animation:none}.card{transition:none}.card:hover{transform:none}}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header>
+ <div class="wrap">
+  <nav aria-label="Primary">
+   <a class="brand" href="#top"><span class="logo">SP</span>Shivam Parashar</a>
+   <ul class="links">
+    <li><a href="#about">About</a></li><li><a href="#experience">Experience</a></li><li><a href="#projects">Projects</a></li>
+    <li><a href="#skills">Skills</a></li><li><a href="#credentials">Credentials</a></li>
+    <li><a class="btn p" href="#contact">Contact me</a></li>
+   </ul>
+  </nav>
+ </div>
+</header>
+
+<main id="main">
+<div class="hero" id="top">
+ <div class="wrap">
+  <div>
+   <span class="status"><span class="dot"></span>Available to join immediately</span>
+   <h1>Full-stack engineer who builds it and keeps it running.</h1>
+   <p class="lead">I have 4+ years of experience building web applications and enterprise backends with Java, Spring Boot, React and SQL, and I am now building AI products with LLMs and RAG.</p>
+   <div class="cta">
+    <a class="btn p" href="#projects">View my projects</a>
+    <a class="btn s" href="Shivam_Parashar_Resume.pdf" download>Download resume</a>
+   </div>
+  </div>
+  <div class="console" aria-hidden="true">
+   <div class="cbar"><i></i><i></i><i></i><span>support_ops.sql</span></div>
+   <pre id="code"></pre>
+   <div class="result"><span id="rows">Ready</span><b id="ok"></b></div>
+  </div>
+ </div>
+</div>
+
+<div class="stats">
+ <div class="wrap">
+  <div class="stat"><b>4+</b><span>Years in software</span></div>
+  <div class="stat"><b>4</b><span>Companies, from startups to Deloitte</span></div>
+  <div class="stat"><b>8</b><span>Meta and IBM certifications</span></div>
+  <div class="stat"><b>9.0</b><span>CGPA in BCA, GGSIPU</span></div>
+ </div>
+</div>
+
+<section id="about">
+ <div class="wrap about">
+  <div>
+   <h2>Engineering that holds up after launch</h2>
+   <p>I started as a React developer, moved into enterprise insurance software at Deloitte, and have since fixed production issues across JavaScript, React, Java and Spring Boot codebases.</p>
+   <p>Today I run day-to-day operations at Leverage Edu, using SQL to find and resolve problems quickly. Outside work I build RAG chatbots and Go services to keep sharpening my backend and AI skills.</p>
+  </div>
+  <dl class="facts">
+   <div><dt>Location</dt><dd>Delhi/NCR, India</dd></div>
+   <div><dt>Current role</dt><dd>CRA, Leverage Edu</dd></div>
+   <div><dt>Looking for</dt><dd>SDE / Full-Stack roles</dd></div>
+   <div><dt>Work mode</dt><dd>Delhi/NCR or remote</dd></div>
+   <div><dt>Start date</dt><dd>Immediately</dd></div>
+  </dl>
+ </div>
+</section>
+
+<section id="experience" class="alt">
+ <div class="wrap">
+  <div class="head"><h2>Experience</h2><p>Four roles across operations, production support, enterprise software and front-end development.</p></div>
+  <ol class="tl">
+   <li class="now">
+    <div class="role"><h3>CRA</h3><time>Sept 2026 - Present</time></div>
+    <div class="org">Leverage Edu</div>
+    <ul>
+     <li>Run day-to-day background operations through the SSP portal, keeping client requests and processes accurate and on time.</li>
+     <li>Write and run SQL queries to investigate, troubleshoot and resolve operational and data issues quickly.</li>
+    </ul>
+   </li>
+   <li>
+    <div class="role"><h3>Web Developer (Freelance)</h3><time>Sept 2024 - May 2026</time></div>
+    <div class="org">Cosmos Public Relations</div>
+    <ul>
+     <li>Identified and fixed bugs raised after production releases across JavaScript, React.js, Java and Spring Boot codebases.</li>
+     <li>Debugged front-end and back-end issues and shipped fixes that kept live client applications stable.</li>
+    </ul>
+   </li>
+   <li>
+    <div class="role"><h3>Associate Analyst, Software Developer</h3><time>Dec 2022 - May 2024</time></div>
+    <div class="org">Deloitte</div>
+    <ul>
+     <li>Configured end-to-end workflows on the Origami Risk platform, cutting manual processing time for enterprise insurance clients.</li>
+     <li>Wrote complex SQL queries and reports that supported decisions for 5+ stakeholders per engagement.</li>
+     <li>Automated reporting with Java and Spring Boot, raising efficiency by 20% and saving about 10 hours a week.</li>
+     <li>Built and maintained backend components that met a 99% on-time report delivery SLA, plus JavaScript and jQuery front-end features.</li>
+    </ul>
+   </li>
+   <li>
+    <div class="role"><h3>Junior Software Developer</h3><time>Jul 2021 - Jul 2022</time></div>
+    <div class="org">Pepcoding</div>
+    <ul>
+     <li>Built and shipped 10+ React.js components and managed state with React Hooks to simplify data flow.</li>
+     <li>Developed responsive HTML5 and CSS3 pages that work across mobile and desktop.</li>
+    </ul>
+   </li>
+  </ol>
+ </div>
+</section>
+
+<section id="projects">
+ <div class="wrap">
+  <div class="head"><h2>Selected projects</h2><p>Personal and professional builds across AI, backend services and full-stack applications.</p></div>
+  <div class="grid">
+   <article class="card big">
+    <h3>AI-Powered Support Chatbot</h3><div class="yr">2026 · Personal project</div>
+    <p>A support chatbot built on LLMs (OpenAI and Claude APIs) with Retrieval-Augmented Generation. It includes a document ingestion and embedding pipeline, prompt templates that reduce hallucinations, and a REST API connected to a React.js front-end that cuts query resolution time compared with manual lookup.</p>
+    <div class="tags"><span class="tag">RAG</span><span class="tag">LLM APIs</span><span class="tag">Embeddings</span><span class="tag">React.js</span><span class="tag">REST API</span></div>
+   </article>
+   <article class="card">
+    <h3>Risk Workflow Engine</h3><div class="yr">2024 · Deloitte</div>
+    <p>Extended Spring Boot services on Origami Risk with custom rule-based workflows, cutting manual claim routing for insurance clients.</p>
+    <div class="tags"><span class="tag">Java</span><span class="tag">Spring Boot</span><span class="tag">SQL</span></div>
+   </article>
+   <article class="card">
+    <h3>Team Task Dashboard</h3><div class="yr">2025</div>
+    <p>An internal project tracker for a 4-person team with real-time task status, assignment and progress views over REST APIs.</p>
+    <div class="tags"><span class="tag">React.js</span><span class="tag">Node.js</span><span class="tag">REST API</span></div>
+   </article>
+   <article class="card">
+    <h3>Go URL Shortener</h3><div class="yr">2023</div>
+    <p>A lightweight, high-concurrency link shortener with click analytics, using goroutines and in-memory caching for fast lookups.</p>
+    <div class="tags"><span class="tag">Golang</span><span class="tag">Concurrency</span><span class="tag">Caching</span></div>
+   </article>
+   <article class="card">
+    <h3>Virtual OS</h3><div class="yr">2022</div>
+    <p>A simulated operating system in Go with a calculator, music player, calendar and live weather app.</p>
+    <div class="tags"><span class="tag">Golang</span><span class="tag">System design</span><span class="tag">APIs</span></div>
+   </article>
+   <article class="card">
+    <h3>E-Commerce Web App</h3><div class="yr">2022</div>
+    <p>A full-stack shopping platform with cart management and purchase history.</p>
+    <div class="tags"><span class="tag">React.js</span><span class="tag">JavaScript</span></div>
+   </article>
+   <article class="card">
+    <h3>Web Automation Suite</h3><div class="yr">2022</div>
+    <p>Python scripts that send LinkedIn connection requests, fetch live Cricbuzz scores, and scrape Flipkart listings under a set budget into a Word file.</p>
+    <div class="tags"><span class="tag">Python</span><span class="tag">Scraping</span><span class="tag">Automation</span></div>
+   </article>
+  </div>
+ </div>
+</section>
+
+<section id="skills" class="alt">
+ <div class="wrap">
+  <div class="head"><h2>Skills</h2><p>The tools I use to build, support and automate software.</p></div>
+  <div class="skills">
+   <div class="sk"><h3>Languages</h3><div class="tags"><span class="tag">Java</span><span class="tag">Python</span><span class="tag">Golang</span><span class="tag">JavaScript</span><span class="tag">SQL</span><span class="tag">HTML5</span><span class="tag">CSS3</span></div></div>
+   <div class="sk"><h3>Frameworks and libraries</h3><div class="tags"><span class="tag">Spring Boot</span><span class="tag">React.js</span><span class="tag">React Hooks</span><span class="tag">jQuery</span><span class="tag">Node.js</span></div></div>
+   <div class="sk"><h3>AI and LLM</h3><div class="tags"><span class="tag">RAG</span><span class="tag">Prompt engineering</span><span class="tag">LangChain</span><span class="tag">FAISS / Pinecone</span><span class="tag">OpenAI API</span><span class="tag">Claude API</span></div></div>
+   <div class="sk"><h3>Data</h3><div class="tags"><span class="tag">MySQL</span><span class="tag">PostgreSQL</span><span class="tag">Query writing</span><span class="tag">Data analysis</span></div></div>
+   <div class="sk"><h3>Tools and platforms</h3><div class="tags"><span class="tag">Git</span><span class="tag">GitHub</span><span class="tag">REST APIs</span><span class="tag">SSP Portal</span><span class="tag">Origami Risk</span><span class="tag">Agile / Scrum</span></div></div>
+   <div class="sk"><h3>Practices</h3><div class="tags"><span class="tag">API design</span><span class="tag">Production debugging</span><span class="tag">Automation</span><span class="tag">Backend</span><span class="tag">Frontend</span></div></div>
+  </div>
+ </div>
+</section>
+
+<section id="credentials">
+ <div class="wrap">
+  <div class="head"><h2>Credentials</h2><p>Certifications from Meta and IBM, plus a degree from GGSIPU.</p></div>
+  <ul class="creds">
+   <li>Introduction to Front-End Development<small>Meta · Jun 2026</small></li>
+   <li>Programming with JavaScript<small>Meta · Jun 2026</small></li>
+   <li>Introduction to Artificial Intelligence<small>IBM · Jun 2026</small></li>
+   <li>Generative AI: Introduction and Applications<small>IBM · Jun 2026</small></li>
+   <li>Generative AI: Prompt Engineering Basics<small>IBM · Jun 2026</small></li>
+   <li>Version Control<small>Meta · Jul 2026</small></li>
+   <li>HTML and CSS in Depth<small>Meta · Jul 2026</small></li>
+   <li>React Basics<small>Meta · Jul 2026</small></li>
+  </ul>
+  <div class="edu"><b>Bachelor of Computer Applications (BCA)</b><span>VIPS, GGSIPU · 2022 · 9.0 / 10</span></div>
+ </div>
+</section>
+
+<section id="contact" style="padding-top:0">
+ <div class="wrap">
+  <div class="contact">
+   <div>
+    <h2>Let's work together</h2>
+    <p>I am open to full-time SDE and full-stack roles in Delhi/NCR or remote, and I can join immediately. Send me a message and I will reply.</p>
+   </div>
+   <div class="cl">
+    <a href="mailto:Paeshar32@gmail.com">Email<span>Paeshar32@gmail.com</span></a>
+    <a href="https://linkedin.com/in/shivam-parashar-820289177" target="_blank" rel="noopener">LinkedIn<span>shivam-parashar</span></a>
+    <a href="tel:+917011005660">Phone<span>+91 70110 05660</span></a>
+    <a href="Shivam_Parashar_Resume.pdf" download>Resume<span>PDF</span></a>
+   </div>
+  </div>
+ </div>
+</section>
+</main>
+
+<footer><div class="wrap"><span>© <span id="yr">2026</span> Shivam Parashar</span><span>Delhi, India</span></div></footer>
+
+<script>
+document.getElementById('yr').textContent=new Date().getFullYear();
+(function(){
+ var el=document.getElementById('code'),rows=document.getElementById('rows'),ok=document.getElementById('ok');
+ var parts=[['c','-- find requests stuck in the queue\n'],['k','SELECT '],['','id, client, status\n'],['k','FROM '],['','support_requests\n'],['k','WHERE '],['','status = '],['f',"'PENDING'"],['','\n  '],['k','AND '],['','age_hours &gt; '],['f','24\n'],['k','ORDER BY '],['','age_hours '],['k','DESC;']];
+ function html(n){var s='',c=0;for(var i=0;i<parts.length;i++){var t=parts[i][1].replace(/&gt;/g,'>'),l=t.length;if(c+l<=n){s+=span(parts[i][0],parts[i][1]);c+=l}else{var r=t.slice(0,n-c);s+=span(parts[i][0],r.replace(/>/g,'&gt;'));c=n;break}}return s}
+ function span(c,t){return c?'<span class="'+c+'">'+t+'</span>':t}
+ var total=parts.reduce(function(a,p){return a+p[1].replace(/&gt;/g,'>').length},0);
+ function done(){el.innerHTML=html(total);rows.textContent='3 rows returned';ok.textContent='Resolved';}
+ if(window.matchMedia('(prefers-reduced-motion: reduce)').matches){done();return}
+ var n=0;rows.textContent='Running…';
+ var t=setInterval(function(){n+=2;if(n>=total){clearInterval(t);done();return}el.innerHTML=html(n)+'<span class="cur"></span>'},38);
+})();
+</script>
+</body>
+</html>
